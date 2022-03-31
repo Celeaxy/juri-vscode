@@ -1,0 +1,25 @@
+{
+    "name": "jurivscode",
+    "displayName": "JuriVSCode",
+    "description": "Language Support for Juri",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "juri",
+            "aliases": ["juri"],
+            "extensions": [".jri"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "juri",
+            "scopeName": "source.juri",
+            "path": "./syntaxes/juri.tmLanguage.json"
+        }]
+    }
+}
